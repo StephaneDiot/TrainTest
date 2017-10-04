@@ -48,3 +48,13 @@ ezpublish:
                         template: "NovaTrainingBundle:full:page_des_sports.html.twig"
                         match:
                             Id\Content: 52
+                    joueurs:
+                        template: "NovaTrainingBundle:full:page_des_joueurs.html.twig"
+                        match:
+                            Id\Content: 64
+            content_view:
+                mini_vue:
+                    mini_bloc_sport:
+                        template: "@NovaTraining/mini/sport.html.twig"
+                        match:
+                            Identifier\ContentType: sport
