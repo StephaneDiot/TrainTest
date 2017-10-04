@@ -38,3 +38,9 @@ ezpublish:
                 purge_servers: ["%purge_server%"]
         site:
             pagelayout: NovaTrainingBundle::pagelayout.html.twig
+            location_view:
+                full:
+                    page_simple:
+                        template: "NovaTrainingBundle:full:page_simple.html.twig"
+                        match:
+                            Identifier\ContentType: page_simple
