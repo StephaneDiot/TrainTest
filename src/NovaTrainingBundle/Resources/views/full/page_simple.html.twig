@@ -1,4 +1,12 @@
 <ul>
     Page simples
-    {{ dump() }}
+
+
+{% block content %}
+    <h1>
+        {{ ez_content_name(content) }}
+    </h1>
+  
+    {{ ez_render_field(content, "body") }}
+{% endblock %}
 </ul>
