@@ -1,0 +1,10 @@
+<ul>
+    MENU
+    {% for searchHit in searchHits %}
+        {%  set location = searchHit.valueObject %}
+            <li>
+                <a href="{{ path(location) }}"> {{ ez_content_name(location.contentInfo) }}</a>
+            </li>
+
+    {% endfor %}
+</ul>
