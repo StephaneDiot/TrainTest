@@ -1,0 +1,17 @@
+<ul>
+
+    {% block content %}
+        {% for searchHit in searchHits %}
+            {%  set content = searchHit.valueObject %}
+
+            <h1>
+                <a href="{{ path("ez_urlalias", {"contentId": content.versionInfo.contentInfo.id}) }}">
+                {{ ez_content_name(content) }}
+
+
+            {{ ez_render_field(content, "image") }}</a>
+
+        {% endfor %}
+
+    {% endblock %}
+</ul>

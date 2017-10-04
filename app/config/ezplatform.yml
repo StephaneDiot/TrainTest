@@ -44,3 +44,7 @@ ezpublish:
                         template: "NovaTrainingBundle:full:page_simple.html.twig"
                         match:
                             Identifier\ContentType: page_simple
+                    sports:
+                        template: "NovaTrainingBundle:full:page_des_sports.html.twig"
+                        match:
+                            Id\Content: 52
